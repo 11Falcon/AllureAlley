@@ -1,0 +1,443 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.card{
+  position:absolute;
+  top:0;
+  left: 40vw;
+  padding:30px 10px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  z-index: 100;
+  
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.navigation a {
+  text-decoration:none;
+  color:#359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight : 600;
+}
+
+.navigation a:hover ,
+.navigation .active{
+  background:#359381;
+  color:#f9f9f9;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.ash{
+  background-color:gold;
+  padding:10px 20px;
+  cursor:pointer;
+  border:none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:#f9f9f9;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    padding:30px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+}
+
+.card{
+  position:absolute;
+  top:0;
+  left: 40vw;
+  padding:30px 10px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  z-index: 100;
+  
+}
+.uploading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.uploading h1{
+  color: aqua;
+}
+.upload{
+  transform: translate(0%,150%);
+  font-size: 16px;
+  background:white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  width: 350px;
+  outline: none;
+}
+.button_container{
+  display: flex;
+  justify-content: center;
+}
+.up_file{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translate(0%,200%);
+  text-decoration:none;
+  color:#359381;
+  padding: 15px 27px;
+  border-radius: 35px;
+  margin: 0 30%;
+  font-weight : 600;
+  border-color: green;
+  box-sizing: border-box;
+}
+.close{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translate(-190%,600%);
+  text-decoration:none;
+  color:#359381;
+  padding: 15px 27px;
+  border-radius: 35px;
+  margin: 0 30%;
+  font-weight : 600;
+  border-color: green;
+  box-sizing: border-box;
+}
+
+.up_file:hover{
+  background:#359381;
+  color:#f9f9f9;
+}
+.close:hover{
+  background:#359381;
+  color:#f9f9f9;
+}
+::-webkit-file-upload-button{
+  color: white;
+  background: #359381;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 0 1px 1px #6b4559;
+  outline: none;
+}
+::-webkit-file-upload-button:hover{
+  background : #438a5e;
+}
+.navigation a {
+  text-decoration:none;
+  color:#359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight : 600;
+}
+
+.navigation a:hover ,
+.navigation .active{
+  background:#359381;
+  color:#f9f9f9;
+}
+.parallax{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+}
+.uploader{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.falcon {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#display{
+  position:relative;
+  width:675px ;
+  height: 411px;
+  top: 200px;
+  left: 200px;
+  border:1px solid black;
+  background-position: center;
+  background-size:auto;
+}
+#image_input.input {
+  text-decoration:none;
+  color:#359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight : 600;
+  position:relative;
+  top: 200px;
+  left: 200px;
+  background-position: center;
+  background-size:auto;
+}
+#image_input.input .file-upload-button {
+  text-decoration:none;
+  color:#359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight : 600;
+}
+
+.file-upload {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  top: 200px;
+  left:200px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.ash{
+  background-color:gold;
+  padding:10px 20px;
+  cursor:pointer;
+  border:none;
+}
+.Button-camera {
+  text-decoration:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color:#359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight : 600;
+  transform: translate(-50%, -50%);
+}
+
+.Button-camera:hover {
+  background:#359381;
+  color:#f9f9f9;
+  transition: transform 1s ease, background-color 0.5s linear;
+}
+.mystyle{
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 3;
+  background-color: #86A8E7;
+}
+.bounce{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rotation{
+  margin-right: 6px;
+  margin-top:50px;
+  /* pointer-events: none; */
+}
+label{
+  font-size: 31;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+#rotation:checked{
+  accent-color: #7d2ae8;
+}
+#rotation:checked ~ label{
+  color: #7d2ae8;
+}
+#flip{
+  margin-right: 6px;
+  margin-top:50px;
+  /* pointer-events: none; */
+}
+#flip:checked{
+  accent-color: #7d2ae8;
+}
+#flip:checked ~ label{
+  color: #7d2ae8;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the spacing as needed */
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+.tit5 {
+  font-size: 1.875rem; /* Equivalent to text-3xl in Tailwind CSS */
+  font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+  color: #86A8E7;
+}
+/* Style for individual image cards */
+.image-card {
+  flex: 1; /* Distribute space evenly among image cards */
+  max-width: 300px; /* Adjust as needed */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin: 10px;
+}
+
+.image-card:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin: 10px;
+}
+
+/* Style for the image itself */
+.image-card img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+.webcam-feed {
+  position: fixed;
+  top: 45%;
+  left: 65%;
+  width: 60%;
+  height: 80%;
+  transform: translate(-50%, -50%) scaleX(-1);
+}
